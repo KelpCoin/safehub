@@ -1,0 +1,14 @@
+﻿{% extends 'base.html' %}
+{% block content %}
+  <h2>Products</h2>
+  <div class="grid">
+    {% for it in items %}
+      <article class="card">
+        <h3>{{ it.name }}</h3>
+        <p class="muted">{{ it.tag }}</p>
+        <p>{{ it.desc }}</p>
+        <strong>{{ it.price }}</strong>
+      </article>
+    {% endfor %}
+  </div>
+{% endblock %}

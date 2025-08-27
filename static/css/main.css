@@ -1,0 +1,20 @@
+﻿:root { --bg:#0f1220; --panel:#171a2a; --stroke:#232642; --txt:#f3f4ff; --muted:#b6b9d6; --cta:#7dd3fc; }
+*{ box-sizing:border-box; }
+body{ margin:0; background:var(--bg); color:var(--txt); font:16px/1.5 system-ui,Segoe UI,Roboto,Arial,sans-serif;}
+a{ color:var(--cta); text-decoration:none; } a:hover{ text-decoration:underline;}
+.container{ max-width:980px; margin:0 auto; padding:24px; }
+.nav{ display:flex; align-items:center; justify-content:space-between; padding:16px 24px; border-bottom:1px solid var(--stroke); background:#0f1220cc; backdrop-filter:saturate(1.2) blur(6px); position:sticky; top:0; }
+.brand{ font-weight:700; font-size:20px; color:var(--txt);}
+nav a{ margin-left:16px; }
+.cta{ background:var(--cta); color:#0b1220; padding:8px 14px; border-radius:10px; font-weight:600;}
+.card{ background:var(--panel); border:1px solid var(--stroke); border-radius:14px; padding:18px; }
+.grid{ display:grid; gap:16px; grid-template-columns:repeat(auto-fill,minmax(240px,1fr)); }
+.hero h1{ margin:0 0 8px 0; }
+.flashes{ list-style:none; padding:0; margin:8px 0 16px; }
+.flashes li{ padding:10px 12px; border-radius:10px; margin-bottom:8px; }
+.flashes li.success{ background:#12381d; border:1px solid #2f8f46; }
+.flashes li.warning{ background:#483215; border:1px solid #ba8d45; }
+.flashes li.danger{  background:#3a171b; border:1px solid #b84e5c; }
+.footer{ opacity:.7; font-size:12px; border-top:1px solid var(--stroke); padding:16px 24px; text-align:center; }
+.form label{ display:block; margin-bottom:10px; }
+.form input{ width:100%; padding:10px 12px; border-radius:10px; border:1px solid var(--stroke); background:#0f1220; color:var(--txt);}
